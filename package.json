@@ -1,0 +1,42 @@
+{
+  "name": "cmsc_495_sentiment_analysis",
+  "version": "1.0.0",
+  "description": "An app which allows one to input sentences, and be given a sentiment analysis report",
+  "main": "app.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esabelhaus/cmsc_495_sentiment_analysis.git"
+  },
+  "keywords": [
+    "sentiment",
+    "analysis",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esabelhaus/cmsc_495_sentiment_analysis/issues"
+  },
+  "homepage": "https://github.com/esabelhaus/cmsc_495_sentiment_analysis#readme",
+  "dependencies": {
+    "bunyan": "^1.8.10",
+    "express": "^4.15.3",
+    "grunt": "^1.0.1",
+    "nconf": "^0.8.4",
+    "node-resque": "^4.0.6",
+    "sentiment": "^4.0.0"
+  },
+  "devDependencies": {
+    "chai": "~1.10.0",
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-mocha-test": "~0.12.4",
+    "grunt-plato": "~1.3.0",
+    "mocha": "~2.0.1",
+    "nock": "^0.51.0",
+    "sinon": "~1.12.1",
+    "supertest": "0.15.0"
+  }
+}
