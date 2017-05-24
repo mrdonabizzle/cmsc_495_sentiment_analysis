@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "An app which allows one to input sentences, and be given a sentiment analysis report",
   "main": "app.js",
+  "private": true,
   "scripts": {
     "test": "grunt"
   },
