@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/esabelhaus/cmsc_495_sentiment_analysis#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "bunyan": "^1.8.10",
+    "cookie-parser": "^1.4.3",
     "express": "^4.15.3",
     "grunt": "^1.0.1",
     "nconf": "^0.8.4",

@@ -16,7 +16,7 @@ var express = require('express'),
   app.use(cookieParser());
 
   // invoke SentimentApp and integrate functionality into Express app
-  sentimental = SentimentApp(app, 'config.json');
+  var sentimental = new SentimentApp(app, 'config.json');
 
   // have express app listen over port 3000 on TCP
   app.listen(3000);
