@@ -36,10 +36,22 @@ describe("QUEUE:TEST with a queue", function() {
     function(_queue) { // this is the callback which contains the actual queue
       _queue.connect(function(){
         // finally, we enqueue the requested analysis job
-        _queue.enqueue('sentiment', 'add', [1,2]);
-        done();
+        var current = 0;
+        _queue.length('sentiment', function(err, res) {
+          console.log(res);
+          current += res;
+        });
+        _queue.enqueue('sentiment', 'add', [1,2], function(res, err) {
+          _queue.length('sentiment', function(erro, resp) {
+            console.log(resp);
+            if (resp > current) {
+              done();
+            } else {
+              done("queue not bumped by 1");
+            }
+          });
+        });
       });
-      // within this space we test that the queue works
     });
   });
 });
