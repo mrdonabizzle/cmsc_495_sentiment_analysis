@@ -28,9 +28,9 @@
     elsewhere, and we will tell you the sentiment.  Enter your text below.</p>
     <form>
       <textarea name="textarea" rows="15" cols="125">Enter text here</textarea><br>
-      <input type="submit" id="submit" value="Analyze">
+      <input type="button" onclick="dummyOutput()" id="submit" value="Analyze">
     </form>
-    
+    <p id="output"></p>
     </article>
     </main>
     <footer>
@@ -38,7 +38,9 @@
     </footer>
   </body>
     <script>
-   
-    
+      var output = document.getElementById("output");
+      function dummyOutput() {
+        output.innerHTML = "This output is not real. Value: 1 <br> This is dummy output. Value: -2<br>Overall Made Up Sentiment: -1";
+      } 
     </script>
 </html>
