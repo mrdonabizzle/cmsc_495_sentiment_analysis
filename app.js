@@ -1,5 +1,6 @@
 var express = require('express'),
     app = express(),
+    queue = require('lib/sentiment_app/queue'),
     cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser'),
     SentimentApp = require('./lib/sentiment_app');
